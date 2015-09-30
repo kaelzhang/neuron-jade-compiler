@@ -16,7 +16,9 @@ $ npm install neuron-jade-compiler --save
 ## Usage
 
 ```js
-var neuron_jade_compiler = require('neuron-jade-compiler');
+var compiler = require('neuron-jade-compiler');
+
+compiler(content, jade_options, callback);
 ```
 
 ## License
