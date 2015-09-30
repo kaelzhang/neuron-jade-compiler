@@ -25,5 +25,8 @@ function compile (content, options, callback) {
     return callback(e);
   }
 
-  callback(null, 'module.exports = ' + result);
+  callback(null, {
+    content: 'module.exports = ' + result,
+    js: true
+  });
 }
