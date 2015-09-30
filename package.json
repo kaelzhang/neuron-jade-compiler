@@ -1,0 +1,28 @@
+{
+  "name": "neuron-jade-compiler",
+  "version": "1.0.0",
+  "description": "neuron-jade-compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaelzhang/neuron-jade-compiler.git"
+  },
+  "keywords": [
+    "neuron-jade-compiler"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "author": "kaelzhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaelzhang/neuron-jade-compiler/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  }
+}
