@@ -2,7 +2,7 @@
 
 module.exports = compile;
 
-var jade = require('jade');
+var jade = require('jade-edge');
 var mix = require('mix2');
 var unique = require('array-unique');
 
@@ -17,6 +17,7 @@ function compile (content, options, callback) {
   }, options);
 
   options.globals = unique(options.globals.concat(DEFAULT_OPTIONS.globals));
+  options.externalRuntime = false;
 
   try {
     var result = jade.compileClient(content, options);
@@ -24,5 +25,5 @@ function compile (content, options, callback) {
     return callback(e);
   }
 
-  callback(null, result);
+  callback(null, 'module.exports = ' + result);
 }

@@ -1,6 +1,6 @@
 {
   "name": "neuron-jade-compiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "neuron-jade-compiler",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "array-unique": "^0.2.1",
-    "jade": "^1.11.0",
+    "jade-edge": "^1.11.3",
     "mix2": "^1.0.1"
   }
 }
