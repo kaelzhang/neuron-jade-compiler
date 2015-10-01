@@ -5,7 +5,7 @@
 
 # neuron-jade-compiler
 
-<!-- description -->
+The jade(2.0) compiler module for neuron
 
 ## Install
 
@@ -16,10 +16,33 @@ $ npm install neuron-jade-compiler --save
 ## Usage
 
 ```js
-var compiler = require('neuron-jade-compiler');
+var jade_compiler = require('neuron-jade-compiler');
+var builder = require('neuron-builder');
 
-compiler(content, jade_options, callback);
+builder(entry, {
+  pkg: pkg,
+  cwd: cwd,
+  compilers: [{
+    match: /\.jade$/,
+    compiler: jade_compiler,
+    options: jade_options
+  }]
+}, function(err, content){
+  // if no `err`, `content` will be the bundled content.
+});
 ```
+
+see [neuron-builder](https://www.npmjs.com/package/neuron-builder) for more details.
+
+### `jade_options`
+
+Default specified options for `jade`
+
+- filename: will always be the filename of the current file
+- compileDebug: `false`
+- externalRuntime: `false`
+
+Other options are not set by default, see [here](http://jade-lang.com/api/) for details
 
 ## License
 

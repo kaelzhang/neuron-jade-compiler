@@ -13,11 +13,12 @@ var DEFAULT_OPTIONS = {
 
 function compile (content, options, callback) {
   options = mix({
-    globals: []
+    globals: [],
+    externalRuntime: false,
+    compileDebug: false
   }, options);
 
   options.globals = unique(options.globals.concat(DEFAULT_OPTIONS.globals));
-  options.externalRuntime = false;
 
   try {
     var result = jade.compileClient(content, options);
