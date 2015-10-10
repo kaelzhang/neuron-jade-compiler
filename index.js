@@ -26,8 +26,10 @@ function compile (content, options, callback) {
     return callback(e);
   }
 
+  var name = options.name || 'template';
+
   callback(null, {
-    content: 'module.exports = ' + result,
+    content: 'module.exports = ' + name + ';\n' + result,
     js: true
   });
 }
