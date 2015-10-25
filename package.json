@@ -1,7 +1,7 @@
 {
   "name": "neuron-jade-compiler",
   "version": "1.0.4",
-  "description": "neuron-jade-compiler",
+  "description": "The jade(2.0) compiler module for neuron",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec ./test/*.js"
