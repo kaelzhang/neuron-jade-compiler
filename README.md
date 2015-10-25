@@ -1,7 +1,7 @@
-[![NPM version](https://badge.fury.io/js/neuron-jade-compiler.svg)](http://badge.fury.io/js/neuron-jade-compiler)
-[![npm module downloads per month](http://img.shields.io/npm/dm/neuron-jade-compiler.svg)](https://www.npmjs.org/package/neuron-jade-compiler)
 [![Build Status](https://travis-ci.org/kaelzhang/neuron-jade-compiler.svg?branch=master)](https://travis-ci.org/kaelzhang/neuron-jade-compiler)
-[![Dependency Status](https://david-dm.org/kaelzhang/neuron-jade-compiler.svg)](https://david-dm.org/kaelzhang/neuron-jade-compiler)
+<!-- [![NPM version](https://badge.fury.io/js/neuron-jade-compiler.svg)](http://badge.fury.io/js/neuron-jade-compiler)
+[![npm module downloads per month](http://img.shields.io/npm/dm/neuron-jade-compiler.svg)](https://www.npmjs.org/package/neuron-jade-compiler)
+[![Dependency Status](https://david-dm.org/kaelzhang/neuron-jade-compiler.svg)](https://david-dm.org/kaelzhang/neuron-jade-compiler) -->
 
 # neuron-jade-compiler
 
@@ -23,7 +23,7 @@ builder(entry, {
   pkg: pkg,
   cwd: cwd,
   compilers: [{
-    match: /\.jade$/,
+    test: /\.jade$/,
     compiler: jade_compiler,
     options: jade_options
   }]
