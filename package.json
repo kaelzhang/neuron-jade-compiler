@@ -1,6 +1,6 @@
 {
   "name": "neuron-jade-compiler",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The jade(2.0) compiler module for neuron",
   "main": "index.js",
   "scripts": {
