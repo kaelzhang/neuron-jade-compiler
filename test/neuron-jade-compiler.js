@@ -11,7 +11,7 @@ compiler(fs.readFileSync(file).toString(), {
   filename: file,
   compileDebug: false
 
-}, function (err, content) {
+}, function (err, result) {
   console.log(err);
-  console.log(content);
+  console.log(result.content);
 });
